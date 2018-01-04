@@ -6,6 +6,6 @@ $.fn.extend({
 
         let offsetBottom  = windowHeight - eleHeight - top;
 
-        this.height(this.height() + offsetBottom);
+        this.css('minHeight', this.height() + offsetBottom + 'px');
     }
 })
